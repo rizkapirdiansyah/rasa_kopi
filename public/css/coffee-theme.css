@@ -1,0 +1,213 @@
+/* RASA KOPI - Luxury Coffee Shop Visual Identity */
+:root {
+  --coffee-dark: #23120b;
+  --coffee-rich: #382014;
+  --coffee-medium: #4e2d1d;
+  --coffee-light: #6f4229;
+  --caramel: #c67c4e;
+  --caramel-hover: #b0683a;
+  --caramel-light: #edd6c8;
+  --cream: #fdfaf6;
+  --cream-soft: #f5ede4;
+  --beige: #dfd3c3;
+  --beige-border: #d4c5b3;
+  --text-dark: #2c1a11;
+  --text-muted: #796659;
+  --bg-subtle: #faf6f0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--cream);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Typography Headings */
+h1, h2, h3, .font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Custom Buttons */
+.btn-caramel {
+  background-color: var(--caramel);
+  color: #ffffff;
+  border: 1px solid var(--caramel);
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  transition: all 0.25s ease-in-out;
+}
+.btn-caramel:hover, .btn-caramel:focus {
+  background-color: var(--caramel-hover);
+  border-color: var(--caramel-hover);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(198, 124, 78, 0.35);
+}
+
+.btn-outline-caramel {
+  background-color: transparent;
+  color: var(--caramel);
+  border: 1.5px solid var(--caramel);
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.55rem 1.3rem;
+  transition: all 0.25s ease-in-out;
+}
+.btn-outline-caramel:hover {
+  background-color: var(--caramel);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-coffee-dark {
+  background-color: var(--coffee-dark);
+  color: #fdfaf6;
+  border: 1px solid var(--coffee-dark);
+  font-weight: 600;
+  border-radius: 8px;
+}
+.btn-coffee-dark:hover {
+  background-color: var(--coffee-rich);
+  color: #ffffff;
+}
+
+/* Cards & Badges */
+.card-coffee {
+  background: #ffffff;
+  border: 1px solid rgba(212, 197, 179, 0.4);
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(44, 26, 17, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+.card-coffee:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(44, 26, 17, 0.1);
+}
+
+.badge-caramel {
+  background-color: var(--caramel);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.35em 0.65em;
+}
+
+.badge-cream {
+  background-color: var(--cream-soft);
+  color: var(--coffee-dark);
+  border: 1px solid var(--beige-border);
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/* Navigation bar */
+.navbar-coffee {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(212, 197, 179, 0.5);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--caramel) !important;
+}
+
+/* Hero Section */
+.hero-coffee {
+  background: linear-gradient(135deg, rgba(35, 18, 11, 0.95), rgba(56, 32, 20, 0.9)),
+              url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color: #ffffff;
+  padding: 5rem 0;
+  position: relative;
+}
+
+/* Footer */
+.footer-coffee {
+  background-color: var(--coffee-dark);
+  color: #e6ded6;
+  border-top: 3px solid var(--caramel);
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+}
+.footer-coffee a {
+  color: #d4c5b3;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-coffee a:hover {
+  color: var(--caramel);
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  color: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+}
+
+/* Admin Sidebar */
+.admin-sidebar {
+  min-height: 100vh;
+  background-color: var(--coffee-dark);
+  color: #fdfaf6;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+.admin-sidebar .nav-link {
+  color: #d7ccc8;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+.admin-sidebar .nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.admin-sidebar .nav-link.active {
+  color: #ffffff !important;
+  background-color: var(--caramel) !important;
+}
+
+/* Ratings */
+.star-rating .bi-star-fill {
+  color: #ffb703;
+}
+.star-rating .bi-star {
+  color: #d4c5b3;
+}
+
+/* Status Badges */
+.bg-purple {
+  background-color: #7b2cbf !important;
+}

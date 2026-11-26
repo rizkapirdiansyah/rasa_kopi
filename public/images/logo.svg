@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6a15c" />
+      <stop offset="100%" stop-color="#c67c4e" />
+    </linearGradient>
+  </defs>
+  <!-- Coffee bean icon -->
+  <g transform="translate(10, 8)">
+    <circle cx="22" cy="22" r="21" fill="#2c1810" stroke="url(#logoGold)" stroke-width="2"/>
+    <!-- Bean shape -->
+    <path d="M14,14 C14,8 30,8 30,14 C30,22 14,22 14,30 C14,36 30,36 30,30" fill="none" stroke="url(#logoGold)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- Text Brand -->
+  <text x="65" y="32" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="22" font-weight="800" fill="#2c1810" letter-spacing="2">RASA<tspan fill="#c67c4e">KOPI</tspan></text>
+  <text x="66" y="46" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#8d6e63" letter-spacing="3.5">COFFEE &amp; ROASTERY</text>
+</svg>

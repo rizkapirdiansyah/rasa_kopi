@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="coffeeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c1810" />
+      <stop offset="50%" stop-color="#3e2723" />
+      <stop offset="100%" stop-color="#1b0000" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#c67c4e" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#coffeeBg)"/>
+  <!-- Decorative circles -->
+  <circle cx="200" cy="140" r="95" fill="none" stroke="#c67c4e" stroke-width="2" stroke-opacity="0.3"/>
+  <circle cx="200" cy="140" r="110" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="4 6" stroke-opacity="0.2"/>
+  
+  <!-- Coffee Cup -->
+  <g transform="translate(140, 75)">
+    <!-- Steam -->
+    <path d="M45,20 C40,5 50,-5 45,-20" stroke="#f7efe5" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M60,18 C55,0 65,-8 60,-22" stroke="#f7efe5" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M75,22 C70,8 80,0 75,-16" stroke="#f7efe5" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+    
+    <!-- Cup Body -->
+    <path d="M20,35 L100,35 C100,85 85,115 60,115 C35,115 20,85 20,35 Z" fill="#fdf8f2" stroke="#d7ccc8" stroke-width="2"/>
+    <!-- Cup Rim & Coffee liquid inside -->
+    <ellipse cx="60" cy="35" rx="40" ry="10" fill="#4a2c20" stroke="#fdf8f2" stroke-width="2"/>
+    <!-- Latte Art / Crema -->
+    <ellipse cx="60" cy="35" rx="30" ry="6" fill="#c67c4e" opacity="0.9"/>
+    <path d="M50,35 Q60,32 70,35 Q60,38 50,35" fill="#fdf8f2" opacity="0.8"/>
+    <!-- Handle -->
+    <path d="M96,48 C115,48 118,85 92,88" fill="none" stroke="#fdf8f2" stroke-width="8" stroke-linecap="round"/>
+    <!-- Saucer -->
+    <ellipse cx="60" cy="120" rx="60" ry="10" fill="#fdf8f2" stroke="#d7ccc8" stroke-width="2"/>
+    <ellipse cx="60" cy="120" rx="45" ry="6" fill="#e0d7ce"/>
+  </g>
+  <!-- Coffee bean icons -->
+  <g transform="translate(180, 240)">
+    <text x="20" y="20" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#e8dfd8" text-anchor="middle" letter-spacing="3">RASA KOPI</text>
+  </g>
+</svg>
